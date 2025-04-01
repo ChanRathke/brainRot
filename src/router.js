@@ -1,5 +1,5 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import Home from './components/HomePage.vue';
+import { createRouter, createWebHashHistory } from 'vue-router';
+import Home from './components/homePage.vue';
 import Leaderboard from './components/Leaderboard.vue';
 import Settings from './components/Settings.vue';
 import Person from './components/Person.vue';
@@ -12,7 +12,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes
 });
 
